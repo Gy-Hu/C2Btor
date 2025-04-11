@@ -3,14 +3,45 @@
 3 constd 2 0
 4 constd 2 1
 5 input 1 %{$(in_main#0)<y>}#4
-6 state 2 reset0
-7 state 2 valid
-8 not 2 6
-9 constd 1 10
-10 eq 2 5 9
-11 and 2 10 7
-12 or 2 11 8
-13 init 2 6 3
-14 next 2 6 4
-15 init 2 7 3
-16 next 2 7 12
+6 input 2 !pc[0].next
+7 input 2 !pc[1].next
+8 state 2 !pc[0]
+9 state 2 !pc[1]
+10 state 2 reset0
+11 state 2 valid
+12 not 2 10
+13 not 2 9
+14 and 2 8 13
+15 not 2 6
+16 and 2 7 15
+17 and 2 16 14
+18 not 2 8
+19 and 2 18 13
+20 and 2 19 16
+21 constd 1 0
+22 slt 2 21 5
+23 constd 1 10
+24 eq 2 5 23
+25 and 2 24 22
+26 and 2 25 20
+27 not 2 7
+28 and 2 6 27
+29 and 2 19 28
+30 not 2 22
+31 and 2 24 30
+32 and 2 31 29
+33 or 2 32 26
+34 or 2 33 17
+35 and 2 34 11
+36 or 2 35 12
+37 and 2 27 15
+38 or 2 10 37
+39 and 2 38 36
+40 and 2 14 11
+41 next 2 8 6
+42 next 2 9 7
+43 init 2 10 3
+44 next 2 10 4
+45 init 2 11 3
+46 next 2 11 39
+47 bad 40

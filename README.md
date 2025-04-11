@@ -125,6 +125,7 @@ python tools/c2btor2.py input.c output.btor2
 - **Extension module compilation failure**: Check that Python development packages and necessary compilation tools are installed on your system
 - **Parsing errors**: Ensure the C code complies with the C99 standard supported by pycparser, and remove any incompatible extensions
 - **Encoding failures**: Check if the Kratos2 IR file format is correct and whether the C language features used are supported
+- **Not generated safety property**: `python tools/c2kratos.py test/input.c --bitvectors --svcomp -o test/output.k2` and using ` __VERIFIER_error()` in C to define the property
 
 ## 6. Advanced Usage
 

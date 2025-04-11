@@ -10,8 +10,10 @@ int main() {
     } else {
         y = -10;
     }
-    
-    assert(y > 0); // This assertion will be true
+    if (!(y > 0)) {
+        __VERIFIER_error();
+    }
+    // assert(y > 0); // This assertion will be true
     
     return 0;
 }
