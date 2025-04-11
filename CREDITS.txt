@@ -1,0 +1,10 @@
+Kratos2 Credits
+===============
+
+Kratos2 makes use of the following libraries. 
+Please see their webpages for full credits and/or licensing details.
+
+- The MathSAT5 SMT solver (https://mathsat.fbk.eu)
+- The nuXmv symbolic model checker (https://nuxmv.fbk.eu)
+- The MiniSat SAT solver (https://github.com/niklasso/minisat)
+- The CaDiCaL SAT solver (https://github.com/arminbiere/cadical)

@@ -1,0 +1,5 @@
+(set-info :source |printed by MathSAT|)
+(declare-fun |%{$(in_main#0)<y>}#4| () Int)
+(define-fun .def_1 () Bool (! true :init true))
+(define-fun .def_27 () Bool (! (= |%{$(in_main#0)<y>}#4| 10) :trans true))
+(assert true)

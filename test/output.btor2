@@ -1,0 +1,16 @@
+1 sort bitvec 32
+2 sort bitvec 1
+3 constd 2 0
+4 constd 2 1
+5 input 1 %{$(in_main#0)<y>}#4
+6 state 2 reset0
+7 state 2 valid
+8 not 2 6
+9 constd 1 10
+10 eq 2 5 9
+11 and 2 10 7
+12 or 2 11 8
+13 init 2 6 3
+14 next 2 6 4
+15 init 2 7 3
+16 next 2 7 12
