@@ -1,0 +1,9 @@
+read_verilog -formal divide.v
+prep -top divider
+flatten
+memory -nomap
+uniquify
+hierarchy -check
+setundef -undriven -init -expose
+sim -w divider
+write_btor -s divide.btor2
