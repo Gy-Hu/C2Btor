@@ -146,3 +146,7 @@ gcc -E -P input.c > input_preprocessed.c
 # Then convert to Kratos2 IR
 python tools/c2kratos.py input_preprocessed.c -o output.k2
 ```
+
+## 6. WIP
+
+Using [btor2verilog](https://github.com/makaimann/btor2verilog) can conduct C2RTL verification
