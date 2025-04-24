@@ -23,7 +23,7 @@ python -m pip install pycparser
 Set up your Python path to include the Kratos2 tools:
 
 ```bash
-export PYTHONPATH=$PYTHONPATH:$PWD/kratos-2.2-linux64/tools/
+export PYTHONPATH=$PYTHONPATH:$PWD/tools/
 ```
 
 Compile the Python extension module:

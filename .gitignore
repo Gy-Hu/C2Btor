@@ -1,0 +1,5 @@
+tools/c2kratos/__pycache__/*
+tools/kratos/__pycache__/*
+tools/kratos/build/*.so
+tools/kratos/build/*
+tools/kratos/*.so
